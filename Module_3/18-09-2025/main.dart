@@ -7,38 +7,43 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context)
   {
     return Scaffold
       (
-       appBar: AppBar(title: Text("My First App"),backgroundColor: Colors.blueGrey,),
+      appBar: AppBar(title: Text("My first App"),backgroundColor: Colors.grey,),
       body: Center
         (
-          child: Column
-            (
-            children:
-            <Widget>[
-             SizedBox(height: 15,),
-              Text("Flutter",style: TextStyle(fontSize: 25,fontWeight:FontWeight.bold,color: Colors.black87),),
-              SizedBox(height: 15,),
-              Text("PHP",style: TextStyle(fontSize: 25,fontWeight:FontWeight.bold,color: Colors.black87),),
-              SizedBox(height: 15,),
-              Text("Cyber Security",style: TextStyle(fontSize: 25,fontWeight:FontWeight.bold,color: Colors.black87),),
-              SizedBox(height: 15,),
-              Text("Oracle",style: TextStyle(fontSize: 25,fontWeight:FontWeight.bold,color: Colors.black87),),
-              SizedBox(height: 15,),
-              Text("java",style: TextStyle(fontSize: 25,fontWeight:FontWeight.bold,color: Colors.black87),),
-              SizedBox(height: 15,),
-              Text("IOS",style: TextStyle(fontSize: 25,fontWeight:FontWeight.bold,color: Colors.black87),),
-              SizedBox(height: 15,),
-              Text("Digital Marketing",style: TextStyle(fontSize: 25,fontWeight:FontWeight.bold,color: Colors.black87),),
-            ],
-          ),
+        child: Column
+          (
+          children:
+          [
+            SizedBox(height: 10),
+            Text("flutter",style: TextStyle(fontSize: 25.00,color: Colors.black,fontWeight: FontWeight.bold,),),
+            SizedBox(height: 10,),
+            Text("Android",style: TextStyle(fontSize: 25.00,color: Colors.black,fontWeight: FontWeight.bold,),),
+            SizedBox(height: 10),
+            Text("Linux",style: TextStyle(fontSize: 25.00,color: Colors.black,fontWeight: FontWeight.bold,),),
+            SizedBox(height: 10),
+            Text("Python",style: TextStyle(fontSize: 25.00,color: Colors.black,fontWeight: FontWeight.bold,),),
+            SizedBox(height: 10),
+            Text("java",style: TextStyle(fontSize: 25.00,color: Colors.black,fontWeight: FontWeight.bold,),),
+            SizedBox(height: 10),
+            Text("IOS",style: TextStyle(fontSize: 25.00,color: Colors.black,fontWeight: FontWeight.bold,),),
+            SizedBox(height: 10),
+            Text("oracle",style: TextStyle(fontSize: 25.00,color: Colors.black,fontWeight: FontWeight.bold,),),
+            SizedBox(height: 10),
+            Text(".net",style: TextStyle(fontSize: 25.00,color: Colors.black,fontWeight: FontWeight.bold,),),
+            SizedBox(height: 10),
+            Text("Digital marketing",style: TextStyle(fontSize: 25.00,color: Colors.black,fontWeight: FontWeight.bold,),),
+            SizedBox(height: 10),
+            Text("Graphics",style: TextStyle(fontSize: 25.00,color: Colors.black,fontWeight: FontWeight.bold,),),
+
+          ],
+        ),
       ),
-      );
+    );
   }
-
-
-  }
-
+}
