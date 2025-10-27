@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: RatingWidgetDemo(),
-    debugShowCheckedModeBanner: false,
-  ));
+  runApp(
+    MaterialApp(home: RatingWidgetDemo(), debugShowCheckedModeBanner: false),
+  );
 }
 
 class RatingWidgetDemo extends StatefulWidget {
@@ -18,9 +17,7 @@ class _RatingWidgetDemoState extends State<RatingWidgetDemo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Rating Widget'),
-      ),
+      appBar: AppBar(title: Text('Rating Widget')),
       body: Center(
         child: Row(
           mainAxisSize: MainAxisSize.min,
@@ -33,7 +30,7 @@ class _RatingWidgetDemoState extends State<RatingWidgetDemo> {
               ),
               onPressed: () {
                 setState(() {
-                  _rating = index + 1; // Update rating
+                  _rating = index + 1;
                 });
               },
             );
